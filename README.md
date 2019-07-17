@@ -4,6 +4,8 @@ I have set up this repository to help me prepare a talk for [FroCoS / Tableau](h
 
   <http://www.andrew.cmu.edu/user/avigad/Papers/arwm_notes.pdf>
 
+(I apologize. They are wordy.)
+
 If you have done any substantial formalization of mathematics, I would like to know:
 
 - What kinds of automation have you found helpful?
