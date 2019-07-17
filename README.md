@@ -11,6 +11,6 @@ If you have done any substantial formalization of mathematics, I would like to k
 
 Even a quick, short response will be appreciated, and if you don't think automation is useful or necessary, you can say so. If you can point to particular examples where automated tools proved useful, or particular examples of inferences that were painful to justify by hand, that would be especially helpful.
 
-You can post an answer as a comment to Issue #1 in this repository. (The public meant to encourage discussion, so that is welcome, too.) You can also write me privately at <avigad@cmu.edu>.
+You can post an answer as a comment to [Issue #1](https://github.com/avigad/arwm/issues/1) in this repository. (The public meant to encourage discussion, so that is welcome, too.) You can also write me privately at <avigad@cmu.edu>.
 
 Feel free to share this request with anyone who may be interested.
