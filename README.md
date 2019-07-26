@@ -1,6 +1,6 @@
 # Automated Reasoning for the Working Mathematician
 
-I have set up this repository to help me prepare a talk for [FroCoS / Tableau](https://frocos2019.org/) in September 2019. The audience will include developers of automated reasoning tools, and I would like to say something about the sorts of tools that are useful to those of us interested in formalizing mathematics. I have prepared some preliminary notes here:
+I have set up this repository to help me prepare a talk for [FroCoS / Tableaux](https://frocos2019.org/) in September 2019. The audience will include developers of automated reasoning tools, and I would like to say something about the sorts of tools that are useful to those of us interested in formalizing mathematics. I have prepared some preliminary notes here:
 
   <http://www.andrew.cmu.edu/user/avigad/Papers/arwm_notes.pdf>
 
