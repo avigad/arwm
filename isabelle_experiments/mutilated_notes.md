@@ -1,7 +1,7 @@
 Notes
 -----
 
-Starting with the template in [mutilated.thy](), I tried Sledgehammer on the first main statement of the template proof:
+Starting with the template in [mutilated_ideal.thy](mutilated_ideal.thy), I tried Sledgehammer on the first main statement of the template proof:
 ```
   bij_betw flip (chessboard ∩ white) (chessboard ∩ -white)
 ```
@@ -21,7 +21,7 @@ The second main statement of the template proof is this:
 ```
 Here, Sledgehammer was great. All five provers told me right away that `bij_betw_same_card` would solve it using the previous fact.
 
-Slegehammer didn't get the next two claims in the template:
+Sledgehammer didn't get the next two claims in the template:
 ```
   `(0, 0) ∈ chessboard ∩ white` and `(7, 7) ∈ chessboard ∩ white`
 ```
@@ -31,18 +31,18 @@ The next claim was more disappointing:
 ```
   card (mchessboard ∩ white) < card (mchessboard ∩ -white)
 ```
-I had hoped that, with the previous facts and the definition of `mchessboard`, the result would be in reach. But Sledgehammer just failed, and what you see is me flailing around desperately trying to come up with enough intermediate facts for the automation to help. Here I had some unfair advantages over a naive user: from my past experience with Isabelle, I knew that theorems about cardinality often require knowing that the relevant sets are finite and I had a pretty good sense of what an explicit formal proof would look like. But even with these advantages, Slegehammer was very little help, and trying to guess facts to throw at the system was like stumbling around in the dark. It would have been much easier to succumb, look up the particular theorems, and resort to manual inference. I am sure there is a more efficient proof using the automation, but what appears in the file is the first one I found.
+I had hoped that, with the previous facts and the definition of `mchessboard`, the result would be in reach. But Sledgehammer just failed, and what you see is me flailing around desperately trying to come up with enough intermediate facts for the automation to help. Here I had some unfair advantages over a naive user: from my past experience with Isabelle, I knew that theorems about cardinality often require knowing that the relevant sets are finite and I had a pretty good sense of what an explicit formal proof would look like. But even with these advantages, Sledgehammer was very little help, and trying to guess facts to throw at the system was like stumbling around in the dark. It would have been much easier to succumb, look up the particular theorems, and resort to manual inference. I am sure there is a more efficient proof using the automation, but what appears in the file is the first one I found.
 
 The next claim was this:
 ```
   ∀ x. card (covers x ∩ white) = card (covers x ∩ -white)
 ```
-Slegehammer failed on the original claim (and `auto` and `simp` did not help either), so I started by reducing the problem to these:
+Sledgehammer failed on the original claim (and `auto` and `simp` did not help either), so I started by reducing the problem to these:
 ```
   ∀ x. card (covers x ∩ white) = 1
   ∀ x. card (covers x ∩ -white) = 1
 ```
-Again, automation did nothing helpful here. I helped it out by splitting on cases (either `x` is a horizontal domino or a vertical one). This enabled `auto` to make some progress, but it still got stuck, and Slegehammer didn't help. I decided to help automation out by claiming these:
+Again, automation did nothing helpful here. I helped it out by splitting on cases (either `x` is a horizontal domino or a vertical one). This enabled `auto` to make some progress, but it still got stuck, and Sledgehammer didn't help. I decided to help automation out by claiming these:
 ```
   ∀ a b. {(a, b), (Suc a, b)} ∩ white = {(a, b)} ∨
          {(a, b), (Suc a, b)} ∩ white = {(Suc a, b)}
@@ -52,12 +52,12 @@ Again, automation did nothing helpful here. I helped it out by splitting on case
 ```
 I also stated the versions with `white` replaced by `-white`. With this hint, Sledgehammer could prove `∀ x. card (covers x ∩ white) = 1`. Four of the five provers told me to use Isabelle's internal resolution theorem prover, `metis`, but one determined that Isabelle's `force` tactic, a tableau prover, could also do it.
 
-There remained the task of proving the hints. Slegehammer still needed help. For the ones above, it was sufficient to add these facts:
+There remained the task of proving the hints. Sledgehammer still needed help. For the ones above, it was sufficient to add these facts:
 ```
   ∀ a b. (a, b) ∈ white ⟷ (Suc a, b) ∉ white
   ∀ a b. (a, b) ∈ white ⟷ (a, Suc b) ∉ white
 ```
-The simplifier could prove these easily. It was actually a big help that Slegehammer could finish off the proof using these, since a manual proof would have been tedious.
+The simplifier could prove these easily. It was actually a big help that Sledgehammer could finish off the proof using these, since a manual proof would have been tedious.
 
 The last substantial claim in the template proof is this:
 ```
@@ -80,7 +80,7 @@ With all of these, Sledgehammer succeeded, but just barely: only CVC4 got it. As
   apply (rule card_UN_disjoint)
   by auto
 ```
-These lines use the simplifier to push `white` into the union, apply the identity, and dispel the subgoals. It was much harder to coax Sledgehammer to do it instead, especially because that involved guessing the hypotheses rather than generating them by applying the rule. In any case, once Slegehammer succeeded, it was easy to go back and prove the hypotheses, and the proof was done.
+These lines use the simplifier to push `white` into the union, apply the identity, and dispel the subgoals. It was much harder to coax Sledgehammer to do it instead, especially because that involved guessing the hypotheses rather than generating them by applying the rule. In any case, once Sledgehammer succeeded, it was easy to go back and prove the hypotheses, and the proof was done.
 
 Additional Notes
 ----------------
