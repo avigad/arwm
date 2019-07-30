@@ -4,7 +4,7 @@ I have set up this repository to help me prepare a talk for [FroCoS / Tableaux](
 
   <http://www.andrew.cmu.edu/user/avigad/Papers/arwm_notes.pdf>
 
-(I apologize. They are wordy.) The directory `isabelle_examples` provides some experiments.
+(I apologize. They are wordy.) The directory `isabelle_experiments` provides some experiments.
 
 If you have done any substantial formalization of mathematics, I would like to know:
 
