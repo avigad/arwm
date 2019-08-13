@@ -15,4 +15,4 @@ The second experiment involves a proof that there are infinitely many primes con
 
 - [primes_mod_four_notes.md](primes_mod_four_notes.md)
 - [primes_mod_four.thy](primes_mod_four.thy)
-- [primes_mod_four.pdf](primes_mod_four.thy)
+- [primes_mod_four.pdf](primes_mod_four.pdf)
