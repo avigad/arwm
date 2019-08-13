@@ -38,7 +38,8 @@ Here, Sledgehammer was great. All five provers told me right away that `bij_betw
 
 Sledgehammer didn't get the next two claims in the template:
 ```
-  `(0, 0) ∈ chessboard ∩ white` and `(7, 7) ∈ chessboard ∩ white`
+  (0, 0) ∈ chessboard ∩ white
+  (7, 7) ∈ chessboard ∩ white
 ```
 but `simp` did easily.
 

@@ -9,7 +9,7 @@ I felt bad that my first experiment (with the mutilated chessboard problem) conc
 
 I had reached the first conclusion on my own, and begun to suspect the second.
 
-I decided that the way of setting up the first experiment, namely, writing out a template and then trying to fill it in rigidly,is somewhat unfair. The whole point to the *interactive* part of interactive theorem proving is that we can use feedback to guide our effort. Moreover, as Jasmin Blanchette pointed out to me, we should not expect to use Sledgehammer on its own. Isabelle has good tools for structuring proofs, and a very good `find` command for finding theorems, and so the challenge is to figure out how to use all the tools effectively.
+I decided that the way of setting up the first experiment, namely, writing out a template and then trying to fill it in rigidly, is somewhat unfair. The whole point to the *interactive* part of interactive theorem proving is that we can use feedback to guide our effort. Moreover, as Jasmin Blanchette pointed out to me, we should not expect to use Sledgehammer on its own. Isabelle has good tools for structuring proofs, and a very good `find` command for finding theorems, and so the challenge is to figure out how to use all the tools effectively.
 
 So, this time around, I decided to be less dogmatic in proving that there are infinitely many primes congruent to three modulo four. Rather than making up a template first, I wrote and adjusted the lemmas while proving the theorem. I also relied more on Isabelle documentation and the `find` command as I went.
 
