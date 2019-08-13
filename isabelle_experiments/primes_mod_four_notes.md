@@ -3,9 +3,9 @@ Notes
 
 I felt bad that my first experiment (with the mutilated chessboard problem) concluded with a mixed assessment of Sledgehammer. Larry Paulson gave me some points to keep in mind:
 
-    One is that first you should always call auto. We always discourage this (on the grounds that the resulting proof might be fragile), but the alternative is too often no proof at all. The reason to call auto is first, to perform all obvious simplifications (sledgehammer is no good at this), and second, to split up a monolithic goal into multiple subgoals. The second point is really critical; it’s always worth the effort to separate out the separate statements that need to be proved. If the resulting proof is messy, you can always sort it out later.
+> One is that first you should always call auto. We always discourage this (on the grounds that the resulting proof might be fragile), but the alternative is too often no proof at all. The reason to call auto is first, to perform all obvious simplifications (sledgehammer is no good at this), and second, to split up a monolithic goal into multiple subgoals. The second point is really critical; it’s always worth the effort to separate out the separate statements that need to be proved. If the resulting proof is messy, you can always sort it out later.
 
-    Another thing: if the problem involves variable binding, e.g. through a summation or integral, then try to get rid of this. Sledgehammer can prove only the simplest statements involving bound variables.
+> Another thing: if the problem involves variable binding, e.g. through a summation or integral, then try to get rid of this. Sledgehammer can prove only the simplest statements involving bound variables.
 
 I had reached the first conclusion on my own, and begun to suspect the second.
 
