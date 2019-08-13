@@ -14,5 +14,5 @@ The first experiment involves a proof of the mutilated chessboard theorem:
 The second experiment involves a proof that there are infinitely many primes congruent to three modulo four. The notes are shorter and the conclusion is more optimistic.
 
 - [primes_mod_four_notes.md](primes_mod_four_notes.md)
-- [primes_mod_four_notes.thy](primes_mod_four_notes.thy)
-- [primes_mod_four_notes.pdf](primes_mod_four_notes.thy)
+- [primes_mod_four.thy](primes_mod_four.thy)
+- [primes_mod_four.pdf](primes_mod_four.thy)
