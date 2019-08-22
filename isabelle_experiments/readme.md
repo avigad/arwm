@@ -10,6 +10,8 @@ The first experiment involves a proof of the mutilated chessboard theorem:
 - [mutilated_ideal.pdf](mutilated_ideal.pdf)
 - [mutilated_actual.thy](mutilated_actual.thy)
 - [mutilated_actual.pdf](mutilated_actual.pdf)
+- [mutilated.thy](mutilated.thy)
+- [mutilated.pdf](mutilated.pdf)
 
 The second experiment involves a proof that there are infinitely many primes congruent to three modulo four. The notes are shorter and the conclusion is more optimistic.
 
