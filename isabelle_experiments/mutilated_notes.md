@@ -116,7 +116,7 @@ Assessment
 
 For comparison, I recently formalized mutilated chessboard problem in Lean, relying only on the simplifier. (The formalization is available here: http://www.andrew.cmu.edu/user/avigad/Papers/mutilated.pdf.) Searching for low-level facts and chaining them together in precise ways is also tedious, and it would be nice to avoid that. But the use of Sledgehammer in this example did not make the task less onerous.
 
-I think I got unluck with this one. Larry Paulson gave me some points to keep in mind:
+I think I got unlucky with this one. Larry Paulson sent me some points to keep in mind:
 
 > One is that first you should always call auto. We always discourage this (on the grounds that the resulting proof might be fragile), but the alternative is too often no proof at all. The reason to call auto is first, to perform all obvious simplifications (sledgehammer is no good at this), and second, to split up a monolithic goal into multiple subgoals. The second point is really critical; it’s always worth the effort to separate out the separate statements that need to be proved. If the resulting proof is messy, you can always sort it out later.
 
