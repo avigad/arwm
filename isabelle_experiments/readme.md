@@ -18,3 +18,9 @@ The second experiment involves a proof that there are infinitely many primes con
 - [primes_mod_four_notes.md](primes_mod_four_notes.md)
 - [primes_mod_four.thy](primes_mod_four.thy)
 - [primes_mod_four.pdf](primes_mod_four.pdf)
+
+The third experiment involves a proof of the intermediate value theorem.
+
+- [ivt_notes.md](ivt_notes.md)
+- [ivt.thy](ivt.thy)
+- [ivt.pdf](ivt.pdf)
