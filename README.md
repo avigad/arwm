@@ -1,10 +1,22 @@
 # Automated Reasoning for the Working Mathematician
 
-I have set up this repository to help me prepare a talk for [FroCoS / Tableaux](https://frocos2019.org/) in September 2019. The audience will include developers of automated reasoning tools, and I would like to say something about the sorts of tools that are useful to those of us interested in formalizing mathematics. I have prepared some preliminary notes here:
+I set up this repository to help me prepare a talk for [FroCoS / Tableaux](https://frocos2019.org/) in September 2019. The current draft of the talk is here:
+
+  <http://www.andrew.cmu.edu/user/avigad/Talks/london.pdf>
+
+Some preliminary notes are here:
 
   <http://www.andrew.cmu.edu/user/avigad/Papers/arwm_notes.pdf>
 
-(I apologize. They are wordy.) The directory `isabelle_experiments` provides some experiments.
+(Warning: they are wordy.)
+
+After preparing the notes, I asked friends and colleagues to respond to the questions below. You can find some of their responses on [Issue #1](https://github.com/avigad/arwm/issues/1) in this repository. Some additional feedback is summarized in [feedback.md](feedback.md).
+
+The directory [isabelle_experiments](https://github.com/avigad/arwm/tree/master/isabelle_experiments) provides some experiments using automation with Isabelle, with notes.
+
+I intend to keep this repository publicly available, in case it is useful to anyone.
+
+## Questions
 
 If you have done any substantial formalization of mathematics, I would like to know:
 
